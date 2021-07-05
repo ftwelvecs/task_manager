@@ -1,6 +1,6 @@
-package utils;
+package kz.f12.school.utils;
 
-public class MyQueue implements Container {
+public class MyStack implements Container {
     private MyLinkedList<Object> linkedList = new MyLinkedList<>();
 
     public int getSize() {
@@ -12,7 +12,7 @@ public class MyQueue implements Container {
     }
 
     public Object pop() {
-        return linkedList.getFirst();
+        return linkedList.getLast();
     }
 
     public boolean isEmpty() {

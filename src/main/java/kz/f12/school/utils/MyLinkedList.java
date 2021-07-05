@@ -1,4 +1,4 @@
-package utils;
+package kz.f12.school.utils;
 
 public class MyLinkedList<T> {
 
