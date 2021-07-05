@@ -10,10 +10,13 @@ public class MyLinkedList<T> {
     }
 
     public void addFirst(T obj) {
-        if (root == null) root = new Node(obj);
-        Node node = new Node(obj);
-        node.next = root;
-        root = node;
+        if (root == null) {
+            root = new Node(obj);
+        } else {
+            Node node = new Node(obj);
+            node.next = root;
+            root = node;
+        }
         size++;
     }
 
